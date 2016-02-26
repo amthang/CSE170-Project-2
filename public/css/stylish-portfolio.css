@@ -287,7 +287,7 @@ hr.small {
 #home-buttons a {
     position: relative;
     padding: 5px;
-    margin-top: 50%;
+    margin-top: 8%;
 }
 
 #sign {
@@ -296,6 +296,10 @@ hr.small {
     text-align: center;
     vertical-align: middle;
     position: absolute;
+}
+
+.top2bot {
+    position: relative;
 }
 
 /* Footer */

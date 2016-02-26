@@ -7,24 +7,31 @@
 <html>
 	<head>
 		<title>My Profile</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+   		<meta name="author" content="">
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<link href="/css/toAddPics.css" rel="stylesheet"> 
-		<link rel="stylesheet" href="../assets/css/main.css" />
+
+		<!-- Added CSS Files -->
+    	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    	<link rel="stylesheet" type="text/css" href="css/da-slider.css"/>
+    	<link rel="stylesheet" href="css/styles.css"/>	
+		<link rel="stylesheet" href="/css/toAddPics.css"> 
+		<link rel="stylesheet" href="../assets/css/main.css"/>
 		<link rel="stylesheet" href="../css/stylish-portfolio.css" />
+		<link rel="stylesheet" href="css/feature_newadditions.css" />
+
+		<!-- Custom Fonts -->
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body class="loading">
-
-		<div id="wrapper">
-
 	    {{> menu_bar_signedin}}
-		<div id="wrapper">
-			<div id="bg"></div>
-				<div id="main"></div>
-			</div>
-				
+		<div id="wrapper" class="top2bot">		
 			<section id="moveit">
 				<h1>Welcome To Your Profile!</h1>
 			
@@ -34,6 +41,214 @@
 					<a href="/saved_profiles" class="btn btn-dark btn-lg">Saved Users</a>
 				</div>
 			</section>
+
+		<!-- <div class="row top2bot">
+
+            <div class="col-md-8">
+                {{#each edit_tripdiary}}
+                <h2>
+                    <p>{{tripname}} {{date}}</p>
+                </h2>
+
+                <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <a href="#">Add Photo
+                            <img class="img-responsive" src={{imgPath}} alt="">
+                        </a>
+                        <h3>
+                            <a href="#">{{subname}}</a>
+                        </h3>
+                        <p>{{description}}</p>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item">
+                        <a href="#">Add Photo
+                            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                        </a>
+                        <h3>
+                            <a href="#">Project Name</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    </div>
+                 </div>
+
+                <hr>
+                <h3>About This Trip</h3>
+                <p>{{aboutdesc}}</p>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                <hr>
+                {{/each}}
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="well">
+                    <h4>Add More to Diary</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                       <span class="input-group-btn">
+                            <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>
+                                <input class="btn btn-default" type="file"><i class="fa fa-plus"> Image</i></input>
+                            </form>
+                            </div>
+
+                            <form id="addImageForm" role="form" method="get" action="/pro_land">
+                                <h3>Fill in the Details</h3>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="tripname" placeholder="Diary Title" name="tripname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="date" placeholder="Date" name="date">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subname" placeholder="Title" name="subname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="aboutdesc" placeholder="Title" name="aboutdesc">
+                                </div>
+                                <div class="completechange">
+                                    <input type="submit" id="submitBtn" class="btn btn-default" value="Complete Changes"></input>
+                                </div>
+                            </form>
+                    <div>
+
+                        </span>
+                    </div>
+                </div>
+        </div>
+
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Travel Trip Diaries 2016</p>
+                </div>
+            </div>
+        </footer>
+	</div>
+</div> -->
+
+
+        <div class="row">
+            <div class="col-md-8">
+                {{#each edit_tripdiary}}
+                <div id="editbar" contenteditable>
+                    <h2>
+                        <p>{{tripname}} {{date}}</p>
+                    </h2>
+                </div>
+
+                <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <!--<button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>-->
+                                <input class="btn btn-default" type="file"><img class="img-responsive" src={{imgPath}} alt=""></input>
+                            </form>
+                            </div>
+
+                        <div id="editbar" contenteditable>
+                            <h3>
+                                <a href="#">{{subname}}</a>
+                            </h3>
+                        </div>
+                        <div id="editbox" contenteditable>
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item">
+                        <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <input class="btn btn-default" type="file"><img class="img-responsive" src={{imgPath}} alt=""></input>
+                            </form>
+                            </div>
+                        <div id="editbar" contenteditable>
+                            <h3>
+                                <a href="#">Project Name</a>
+                            </h3>
+                        </div>
+                        <div id="editbox" contenteditable>
+                            <p>My trip my trip my trip ETC ETC ETC BBLAH LBALHAH ASF ABLAH.</p>
+                        </div>
+                    </div>
+                 </div>
+
+                <hr>
+                <h3>About This Trip</h3>
+                <div id="editbox" contenteditable>
+                    <p>{{aboutdesc}}</p>
+                </div>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                <hr>
+                {{/each}}
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="well">
+                    <h4>Add More to Diary</h4>
+                    <div class="input-group">
+                        <!-- <input type="text" class="form-control"> -->
+                        <span class="input-group-btn">
+                            <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <!--<button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>-->
+                                <input class="btn btn-default" type="file"><i class="fa fa-plus"> Image</i></input>
+                            </form>
+                            </div>
+
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <h3>Fill in the Details</h3>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="tripname" placeholder="Diary Title" name="tripname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="date" placeholder="Date" name="date">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subname" placeholder="Title" name="subname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="aboutdesc" placeholder="Title" name="aboutdesc">
+                                </div>
+                                <div class="completechange">
+                                    <input type="submit" id="submitBtn" class="btn btn-default" value="Complete Changes"></input>
+                                </div>
+                            </form>
+                    <div>
+
+                            <a href="edit_tripdiary.html"></a>
+                        </span>
+                    </div>
+
+                </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+</div>
 		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
@@ -92,5 +307,6 @@
 		<script src="/js/jquery-1.11.0.js"></script>
 		<script src="/js/bootstrap.js"></script>
 		<script src="/routes/addPicture.js"></script>
+		<script src="/routes/edit_tripdiary.js"></script>
 	</body>
 </html>
