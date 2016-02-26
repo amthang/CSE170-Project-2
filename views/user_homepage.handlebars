@@ -40,15 +40,24 @@
         <h1>Wish Trip</h1>
 
         <div class="searchBar">
-            <form id="searchDestination" role="form" method="get" action="/search">
-            <div class="form-group">
-                <input type="text" class="form-control" id="destination" placeholder="Destination" name="city">
-                <a href="/search_results">
+                <form id="searchDestination" role="form" method="post" action="/search_results">
+                <div class="form-group">
+                    <input type="text" class="form-control city" id="city" placeholder="Destination" name="city">
+<!--                     <script language="javascript">
+                        var city = searchBar.city.value;
+                        var paris = "Paris";
+                        var san_diego = "San Diego";
+                        if(city == paris || city == san_diego) {
+                            <a href="/search_results">
+                        }
+                    </script> -->
+                    <!-- <a href="/search_results"> -->
+                </div>
+                <!-- <input type="search" id="submitBtn" class="btn btn-default" value="search"> -->
+                <button name="signin_btn" type="submit">Search</button>
+                </input>
+                </form>
             </div>
-            <input type="search" id="submitBtn" class="btn btn-default" value="search">
-            </input>
-            </form>
-        </div>
 
     </div>
 
@@ -61,7 +70,7 @@
                     <hr class="small">
                     <div class="row">
                         {{#each feature}}
-                        <div class="col-md-6" id="feature_diary">
+                        <div class="col-xs-6" id="feature_diary">
                             <div class="portfolio-item">
                                 <a href="/travel_diary">
                                     <span class="caption">

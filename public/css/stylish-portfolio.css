@@ -197,6 +197,16 @@ hr.small {
     -o-background-size: cover;
 }
 
+/********************************* Portfolio ********************************/
+/*.portfolio-item:nth-child(2) img {
+    top:-90%;
+    left: -70%;
+}
+
+.portfolio-item:nth-child(3) img {
+    top: -90%;
+}*/
+
 .portfolio-item a .caption {
     background-color: rgba(0,0,0,0.7);
     display: block;
@@ -259,6 +269,38 @@ hr.small {
 .portfolio-item {
     margin-bottom: 30px;
 }
+/*
+.img-portfolio {
+    margin: 0 auto;
+}*/
+/*********************************
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+.portfolio-item .imgDescription {
+    position: absolute;
+    display: none;
+}
+
+.portfolio-item:hover .imgDescription{
+    display: block;
+}********************************************************************/
+
+/*.item1 {
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.item1:hover {
+  display: block;
+}*/
+
+/* Call to Action */
 
 .call-to-action {
     padding: 50px 0;
@@ -268,18 +310,35 @@ hr.small {
     margin: 10px;
 }
 
-#sign {
-    margin: 0 auto;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
+/* Map 
+.sign_up{
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border: 1px dotted gray;
+    padding: 10px;
 }
 
-.signup {
-    margin-left: 100px;
+.scrolloff{
+    pointer-events: none;
 }
 
+.map {
+    margin-top: 10px;
+    height: 500px;
+}
+
+.map_only {
+    margin-left: 10px;
+     border: 1px dotted gray;
+     padding: 20px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}*/
 #moveit h1 {
     font-size: 2em;
 }
@@ -296,6 +355,10 @@ hr.small {
     text-align: center;
     vertical-align: middle;
     position: absolute;
+}
+
+.signup {
+    margin-left: 100px;
 }
 
 /* Footer */

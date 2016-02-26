@@ -61,57 +61,6 @@
         <!-- /.row -->
 
         <div class="row">
-
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
-                {{#each edit_tripdiary}}
-                <h2>
-                    <p>{{tripname}} {{date}}</p>
-                </h2>
-
-                <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
-                <hr>
-
-                <div class="row">
-                    <div class="col-md-4 portfolio-item">
-                        <a href="#">Add Photo
-                            <img class="img-responsive" src={{imgPath}} alt="">
-                        </a>
-                        <h3>
-                            <a href="#">{{subname}}</a>
-                        </h3>
-                        <p>{{description}}</p>
-                    </div>
-
-                    <div class="col-md-4 portfolio-item">
-                        <a href="#">Add Photo
-                            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                        </a>
-                        <h3>
-                            <a href="#">Project Name</a>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                 </div>
-
-                <hr>
-                <h3>About This Trip</h3>
-                <p>{{aboutdesc}}</p>
-                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
-                <hr>
-                {{/each}}
-                <!-- Pager -->
-                <!-- <ul class="pager">
-                    <li class="previous">
-                        <a href="#">&larr; Previous Day</a>
-                    </li>
-                    <li class="next">
-                        <a href="#">Next Day &rarr;</a>
-                    </li>
-                </ul> -->
-
-            </div>
-
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
 
@@ -152,15 +101,93 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="aboutdesc" placeholder="Title" name="aboutdesc">
                                 </div>
-                                <input type="submit" id="submitBtn" class="btn btn-default" value="Complete Changes"></input>
+                                <div class="completechange">
+                                    <input type="submit" id="submitBtn" class="btn btn-default" value="Complete Changes"></input>
+                                </div>
                             </form>
                     <div>
 
-                            <a href="edit_tripdiary.html"></a>;
+                            <a href="edit_tripdiary.html"></a>
                         </span>
                     </div>
                     <!-- /.input-group -->
                 </div>
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+                {{#each edit_tripdiary}}
+                <div id="editbar" contenteditable>
+                    <h2>
+                        <p>{{tripname}} {{date}}</p>
+                    </h2>
+                </div>
+
+                <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <!--<button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>-->
+                                <input class="btn btn-default" type="file"><img class="img-responsive" src={{imgPath}} alt=""></input>
+                            </form>
+                            </div><!-- /////////////////////////////////// -->
+                        <!-- <a href="#">Add Photo
+                            <img class="img-responsive" src={{imgPath}} alt="">
+                        </a> -->
+                        <div id="editbar" contenteditable>
+                            <h3>
+                                <a href="#">{{subname}}</a>
+                            </h3>
+                        </div>
+                        <div id="editbox" contenteditable>
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 portfolio-item">
+                        <!--<a href="#">Add Photo
+                            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                        </a>-->
+                        <div class="form-group">
+                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
+                                <!--<button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>-->
+                                <input class="btn btn-default" type="file"><img class="img-responsive" src={{imgPath}} alt=""></input>
+                            </form>
+                            </div>
+                        <div id="editbar" contenteditable>
+                            <h3>
+                                <a href="#">Project Name</a>
+                            </h3>
+                        </div>
+                        <div id="editbox" contenteditable>
+                            <p>My trip my trip my trip ETC ETC ETC BBLAH LBALHAH ASF ABLAH.</p>
+                        </div>
+                    </div>
+                 </div>
+
+                <hr>
+                <h3>About This Trip</h3>
+                <div id="editbox" contenteditable>
+                    <p>{{aboutdesc}}</p>
+                </div>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                <hr>
+                {{/each}}
+                <!-- Pager -->
+                <!-- <ul class="pager">
+                    <li class="previous">
+                        <a href="#">&larr; Previous Day</a>
+                    </li>
+                    <li class="next">
+                        <a href="#">Next Day &rarr;</a>
+                    </li>
+                </ul> -->
+
+            </div>
+
+            
         </div>
         <!-- /.row -->
         <hr>

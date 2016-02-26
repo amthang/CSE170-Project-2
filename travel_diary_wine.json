@@ -1,0 +1,18 @@
+{
+	"title" : "Wine Tasting in Paris",
+
+	"trip": [
+		{ 
+		    "place_visited": "Le Troquet des Glaces",
+		    "description" : "Great wine"
+		},
+		{ 
+		    "place_visited": "Les Caves de Prague",
+		    "description" : "Awesome drinks"
+		},
+		{ 
+		    "place_visited": "Le Baron Rouge",
+		    "description" : "Very nice"
+		}
+	]
+}

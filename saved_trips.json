@@ -1,46 +1,15 @@
 {
-	"saved_trips1": [
+	"saved_trips1" : [
 		{
-			"trip": "Paris, France",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"trip" : "Brittany's Paris Trip",
+			"imgPath" : "img/portfolio/img4.jpg",
+			"link" : "/travel_diary_brittany"
 		},
 		{
-			"trip": "San Diego, California",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
-			"trip": "Rome, Italy",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		}
-	],
-
-	"saved_trips2": [
-		{
-			"trip": "Beijing, China",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
-			"trip": "Vancouver, Canada",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
-			"trip": "Bangkok, Thailand",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		}
-	],
-
-	"saved_trips3": [
-		{
-			"trip": "Rio de Janiero, Brazil",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
-			"trip": "New York City, New York",
-			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
-			"trip": "Johannesburg, South Africa",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"trip" : "Wine Tasting in Paris",
+			"imgPath" : "img/portfolio/img8.jpg",
+			"link" : "/travel_diary_wine"
 		}
 	]
+	
 }
