@@ -20,73 +20,20 @@
 		<div id="wrapper">
 
 	    {{> menu_bar_signedin}}
-	<!-- //////////////////////////////////////////////////////////////////////- -->
 		<div id="wrapper">
 			<div id="bg"></div>
-				<div id="main">
-				<!-- Header -->
-					<!-- <header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Family Man &nbsp;&bull;&nbsp;</p>
-						<nav>
-							<ul>
-								<li><a href="/saved_trips" class="icon fa-twitter"><span class="label">Saved Trips</span></a></li>
-								<li><a href="/saved_profiles" class="icon fa-facebook"><span class="label">Saved Profiles</span></a></li>
-								<li><a href="/edit_tripdiary" class="icon fa-dribbble"><span class="label">Edit Trip Diary</span></a></li>
-							</ul>
-						</nav>
-					</header> -->
-				</div>
+				<div id="main"></div>
 			</div>
 				
-				<section id="moveit">
-					<h1>Welcome back!</h1>
-					
-					<div>
-						<li><a href="/saved_trips" class="icon fa-twitter">Saved Trips</a></li>
-						<li><a href="/saved_profiles" class="icon fa-facebook">Saved Profiles</a></li>
-						<li><a href="/edit_tripdiary" class="icon fa-dribbble">Edit Trip Diary</a></li>
-					</div>
-					
-
-					<div class="container">
-
-					<h1>My Profile</h1>
-
-					{{#each addPicture}}
-					<div class="addPicture">
-						<img class="img-responsive img-rounded" src="{{imagesrc}}">
-						<a href="#" id="clickr">
-							<h3>{{pictitle}}</h3>
-						</a>
-						<p>{{description}}</p>
-					</div>
-					{{/each}}
-
-					<div class="form-group">
-							<form action="upload.php" method="post" enctype="multipart/form-data">
-								<label for="imagesrc">Select Image for Upload</label>
-								<input type="file" name="imagesrc" id="imagesrc">
-							</form>
-					</div>
-
-					<form id="addImageForm" role="form" method="get" action="/addPicture">
-						<h3>Add an Image</h3>
-					    <div class="form-group">
-					     	<label for="pictitle">Title:</label>
-					     	<input type="text" class="form-control" id="pictitle" placeholder="Title" name="pictitle">
-					    </div>
-					    <div class="form-group">
-					     	<label for="description">Description:</label>
-					     	<input type="text" class="form-control" id="description" placeholder="Description" name="description">
-					    </div>
-					    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the Image"></input>
-					</form>
-				
-				</section>
-		</div>
-
-
+			<section id="moveit">
+				<h1>Welcome To Your Profile!</h1>
+			
+				<div id="home-buttons">
+					<a href="/edit_tripdiary" class="btn btn-dark btn-lg">Edit Trip Diary</a>
+					<a href="/saved_trips" class="btn btn-dark btn-lg">Saved Trips</a>
+					<a href="/saved_profiles" class="btn btn-dark btn-lg">Saved Users</a>
+				</div>
+			</section>
 		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
