@@ -2,45 +2,54 @@
 	"saved_profiles1": [
 		{
 			"name": "Anjelica Thang",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "AnjelicaThang"
 		},
 		{
 			"name": "Steven Duong",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "StevenDuong"
 		},
 		{
 			"name": "Helen Cheng",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "HelenCheng"
 		}
 	],
 
 	"saved_profiles2": [
 		{	
 			"name": "Joel Krejmas",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "JoelKrejmas"
 		},
 		{
 			"name": "Harry Potter",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "HarryPotter"
 		},
 		{
 			"name": "Ron Weasley",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "RonWeasley"
 		}
 	],
 
 	"saved_profiles3": [
 		{
 			"name": "Hermione Granger",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "HermioneGranger"
 		},
 		{
 			"name": "Severus Snape",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "SeverusSnape"
 		},
 		{
 			"name": "Albus Dumbledore",
-			"imgPath": "img/profile_pic/girl1.jpg"
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"path": "AlbusDumbledore"
 		}
 	]
 }

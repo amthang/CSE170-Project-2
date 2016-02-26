@@ -4,33 +4,18 @@
 	"places" : [
 		{ 	
 		    "img": "https://i.ytimg.com/vi/O4W4X_UBRkg/maxresdefault.jpg",
-		    "name": "Brittany's Paris Trip",
+		    "trip_name": "Brittany's Paris Trip",
 		    "city": "Paris",
-		    "description": "My study abroad in France was amazing! Here is why..."
+		    "description": "My study abroad in France was amazing! Here is why...",
+		    "link" : "/travel_diary_brittany"
 		},
 		{ 	
 		    "img": "https://pixabay.com/static/uploads/photo/2015/08/24/15/00/wine-905098_960_720.jpg",
-		    "name": "Wine Tasting in Paris",
+		    "trip_name": "Wine Tasting in Paris",
 		    "city": "Paris",
-		    "description": "I went solo to a wine, cheese, and charcuterie lunch and absolutely loved it. The wines were very nice, and Neil, our sommelier was so knowledgeable and fun. It was a terrific small group of 5, and we were in a great wine library at the back. If I could transport this room to my home, I'd be thrilled. Highly recommended."
-		},
-		{ 	
-		    "img": "https://c1.staticflickr.com/1/670/20365753384_c48a64e7df_b.jpg",
-		    "name": "Paris, Summer 2014",
-		    "city": "Paris",
-		    "description": "The summer beach with sand and children's entertainments was as amazing transformation of the street along the bank of the Seine! What a wonderful idea for sunny, warm days of July. I had never seen pictures of it, nor heard that it was done by the city of Paris for the people."
-		},
-		{ 	
-		    "img": "https://pixabay.com/static/uploads/photo/2013/04/11/19/46/louvre-102840_960_720.jpg",
-		    "name": "The Louvre",
-		    "city": "Paris",
-		    "description": "My wife and I spent a half-day at the Louvre during a 3-day Paris visit. Of course it's a must destination and the collection of art and history is incomparable. My only suggestions and observations to first-time visitors are that Paris was unseasonably warm during our May visit, and the Louvre was at times hot and stuffy. But maybe (maybe!) we're simply spoiled Americans, used to our air conditioning."
-		},
-		{ 	
-		    "img": "https://pixabay.com/static/uploads/photo/2014/03/28/19/54/love-300292_960_720.jpg",
-		    "name": "The Smith's Honeymoon in Paris",
-		    "city": "Paris",
-		    "description": "Who could ask for a better honeymoon destination than Paris, The City of Love? We happen to agree with Audrey Hepburn when she said, Paris is always a good idea. Its iconic monuments like the Eiffel Tower, museums like the Louvre and landmarks like the Notre Dame Cathedral are certain to dazzle visitors. However, even more spectacular than the sights is Paris' rich culture found in its charming boulevards, cozy cafes and bustling bistros. This grand city boasts an indescribable je ne sais quoi that is sure to inspire an incredibly romantic honeymoon."
+		    "description": "I went solo to a wine, cheese, and charcuterie lunch and absolutely loved it. The wines were very nice, and Neil, our sommelier was so knowledgeable and fun. It was a terrific small group of 5, and we were in a great wine library at the back. If I could transport this room to my home, I'd be thrilled. Highly recommended.",
+		    "link" : "/travel_diary_wine"
 		}
+		
 	]
 }

@@ -42,102 +42,6 @@
 				</div>
 			</section>
 
-		<!-- <div class="row top2bot">
-
-            <div class="col-md-8">
-                {{#each edit_tripdiary}}
-                <h2>
-                    <p>{{tripname}} {{date}}</p>
-                </h2>
-
-                <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
-                <hr>
-
-                <div class="row">
-                    <div class="col-md-4 portfolio-item">
-                        <a href="#">Add Photo
-                            <img class="img-responsive" src={{imgPath}} alt="">
-                        </a>
-                        <h3>
-                            <a href="#">{{subname}}</a>
-                        </h3>
-                        <p>{{description}}</p>
-                    </div>
-
-                    <div class="col-md-4 portfolio-item">
-                        <a href="#">Add Photo
-                            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                        </a>
-                        <h3>
-                            <a href="#">Project Name</a>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                 </div>
-
-                <hr>
-                <h3>About This Trip</h3>
-                <p>{{aboutdesc}}</p>
-                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
-                <hr>
-                {{/each}}
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="well">
-                    <h4>Add More to Diary</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                       <span class="input-group-btn">
-                            <div class="form-group">
-                            <form id="addImageForm" role="form" method="get" action="/edit_tripdiary">
-                                <button class="btn btn-default" type="button"><i class="fa fa-plus"> Image</i></button>
-                                <input class="btn btn-default" type="file"><i class="fa fa-plus"> Image</i></input>
-                            </form>
-                            </div>
-
-                            <form id="addImageForm" role="form" method="get" action="/pro_land">
-                                <h3>Fill in the Details</h3>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="tripname" placeholder="Diary Title" name="tripname">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="date" placeholder="Date" name="date">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subname" placeholder="Title" name="subname">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="aboutdesc" placeholder="Title" name="aboutdesc">
-                                </div>
-                                <div class="completechange">
-                                    <input type="submit" id="submitBtn" class="btn btn-default" value="Complete Changes"></input>
-                                </div>
-                            </form>
-                    <div>
-
-                        </span>
-                    </div>
-                </div>
-        </div>
-
-
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Travel Trip Diaries 2016</p>
-                </div>
-            </div>
-        </footer>
-	</div>
-</div> -->
-
-
         <div class="row">
             <div class="col-md-8">
                 {{#each edit_tripdiary}}
@@ -254,20 +158,6 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
-		<!-- jQuery -->
-		<script src="../js/jquery.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
-
-		<script src="../js/signup.js"></script>
-		<!-- Scripts -->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/jquery.scrolly.min.js"></script>
-		<script src="../assets/js/jquery.poptrox.min.js"></script>
-		<script src="../assets/js/skel.min.js"></script>
-		<script src="../assets/js/util.js"></script>
-
 
 		<!-- Custom Theme JavaScript -->
 		<script>
@@ -301,12 +191,40 @@
 		});
 		</script>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<!-- Include all compiled plugins (blelow), or include individual files as needed -->
-		<script src="/js/jquery-1.11.0.js"></script>
-		<script src="/js/bootstrap.js"></script>
-		<script src="/routes/addPicture.js"></script>
-		<script src="/routes/edit_tripdiary.js"></script>
+<script>
+    $(document).ready(function () {
+
+        // you want to enable the pointer events only on click;
+
+        $('#map_canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#contact').on('click', function () {
+            $('#map_canvas').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas").mouseleave(function () {
+            $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (blelow), or include individual files as needed -->
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/routes/addPicture.js"></script>
+        <script src="/routes/edit_tripdiary.js"></script>
+        <!-- jQuery -->
+        <script src="../js/jquery.js"></script>
+
+        <script src="../js/signup.js"></script>
+        <!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/jquery.poptrox.min.js"></script>
+        <script src="../assets/js/skel.min.js"></script>
+        <script src="../assets/js/util.js"></script>
 	</body>
 </html>

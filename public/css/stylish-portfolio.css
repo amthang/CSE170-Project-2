@@ -203,10 +203,7 @@ hr.small {
     overflow: hidden;
     padding: 10px;
     position: absolute;
-    /*left: 0; /* 0.5 */
-    /*right: 0; /* 0.5 */ 
-    /*bottom: 0; /* 0.5 */
-    top: 215px; /* 212 */
+    top: 215px; 
     transition-property: top;
     transition-duration: 0.1s;
     width: 94%;
@@ -227,7 +224,7 @@ hr.small {
 .portfolio-item a .caption p {
     color: white;
     display: none;
-    line-height: 1360%; /* 150 */
+    line-height: 1360%;
     transition: all 0.2s;
     width: 90%;
 }
@@ -260,6 +257,7 @@ hr.small {
     margin-bottom: 30px;
 }
 
+
 .call-to-action {
     padding: 50px 0;
 }
@@ -268,17 +266,6 @@ hr.small {
     margin: 10px;
 }
 
-#sign {
-    margin: 0 auto;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-}
-
-.signup {
-    margin-left: 100px;
-}
 
 #moveit h1 {
     font-size: 2em;
@@ -300,6 +287,10 @@ hr.small {
 
 .top2bot {
     position: relative;
+}
+
+.signup {
+    margin-left: 100px;
 }
 
 /* Footer */

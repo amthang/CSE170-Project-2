@@ -1,18 +1,5 @@
 {
-	"title" : [
-		{
-			"trip_name" : "Brittany's Paris Trip"
-		},
-		{
-			"trip_name" : "Wine Tasting in Paris"
-		},
-		{
-			"trip_name" : "Paris, Summer 2014"
-		},
-		{
-			"trip_name" : "The Louvre"
-		}
-	],
+	"title" : "Brittany's Paris Trip",
 
 	"trip": [
 		{ 
